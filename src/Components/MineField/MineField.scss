@@ -1,0 +1,27 @@
+$blast: radial-gradient(yellow, red);
+@mixin row {
+  .minerow {
+    display: flex;
+
+    .minecell {
+      width: 5em;
+      height: 5em;
+      display: flex;
+      place-self: center;
+      border: 5px outset lightgrey;
+      outline: none;
+      &.blast{
+        background: $blast;
+        border-style: inset;
+      }
+      &.selected{
+        border-style: inset;
+      }
+    }
+  }
+}
+.minefield {
+  @include row;
+  display: flex;
+  flex-direction: column;
+}

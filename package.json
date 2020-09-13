@@ -3,11 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "babel-eslint": "^10.1.0",
+    "date-fns": "^2.16.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-redux": "^7.2.1",
     "react-scripts": "3.4.3"
   },
   "scripts": {
@@ -17,7 +24,38 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "parser": "babel-eslint",
+    "extends": [
+      "react-app",
+      "eslint:recommended",
+      "plugin:prettier/recommended",
+      "plugin:react/recommended"
+    ],
+    "plugins": [
+      "react",
+      "header",
+      "prettier",
+      "react-hooks"
+    ],
+    "rules": {
+      "header/header": [
+        2,
+        "block",
+        [
+          "",
+          " * Authored by Samir Kishore",
+          " "
+        ]
+      ],
+      "semi": [
+        2,
+        "always"
+      ],
+      "react/display-name": 0,
+      "prettier/prettier": "error",
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn"
+    }
   },
   "browserslist": {
     "production": [
@@ -30,5 +68,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-header": "^3.1.0",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "prettier": "^2.1.1"
   }
 }
