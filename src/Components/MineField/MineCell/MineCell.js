@@ -17,8 +17,8 @@ export default function MineCell({ number, isMine, onClick }) {
 
   return (
     <button
-      className={`minecell ${number} ${isMine ? "blast" : ""} ${
-        value !== -1 ? "selected" : ""
+      className={`minecell ${number}${isMine ? " blast" : ""}${
+        value !== -1 ? " selected" : ""
       }`}
       onClick={() => onCellClick(number)}
     >
@@ -37,5 +37,5 @@ MineCell.propTypes = {
 MineCell.defaultProps = {
   number: "",
   isMine: false,
-  onClick: () => ({ mine: false, value: -1 }),
+  onClick: () => -1,
 };

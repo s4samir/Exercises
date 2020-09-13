@@ -3,9 +3,9 @@
  */
 import React, { useState } from "react";
 import "./App.scss";
-import { MineField } from "./Components/MineField/MineField";
-import { Controls } from "./Components/Controls/Controls";
-import { TopForm } from "./Components/TopForm/TopForm";
+import MineField from "./Components/MineField/MineField";
+import Controls from "./Components/Controls/Controls";
+import TopForm from "./Components/TopForm/TopForm";
 import ResultDialog from "./Components/ResultDialog/ResultDialog";
 
 function App() {

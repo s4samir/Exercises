@@ -11,18 +11,20 @@ import DialogActions from "@material-ui/core/DialogActions";
 export default function ResultDialog({ result, onClose }) {
   const handleClose = () => {};
   return (
-    <Dialog
-      onClose={handleClose}
-      aria-labelledby="simple-dialog-title"
-      open={!!result}
-    >
-      <DialogTitle id="simple-dialog-title">{`Game ${result}`}</DialogTitle>
-      <DialogActions>
-        <Button autoFocus onClick={onClose} color="primary">
-          Play again!!
-        </Button>
-      </DialogActions>
-    </Dialog>
+    <>
+      <Dialog
+        onClose={handleClose}
+        aria-labelledby="simple-dialog-title"
+        open={!!result}
+      >
+        <DialogTitle id="simple-dialog-title">{`Game ${result}`}</DialogTitle>
+        <DialogActions>
+          <Button autoFocus onClick={onClose} color="primary">
+            Play again!!
+          </Button>
+        </DialogActions>
+      </Dialog>
+    </>
   );
 }
 

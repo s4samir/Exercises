@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Minefield creates minecell 1`] = `
+<div
+  className="minefield"
+>
+  <div
+    className="minerow"
+  >
+    <button
+      className="minecell 11"
+      onClick={[Function]}
+    />
+    <button
+      className="minecell 12"
+      onClick={[Function]}
+    />
+    <button
+      className="minecell 13"
+      onClick={[Function]}
+    />
+    <button
+      className="minecell 14"
+      onClick={[Function]}
+    />
+    <button
+      className="minecell 15"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="minerow"
+  >
+    <button
+      className="minecell 21"
+      onClick={[Function]}
+    />
+    <button
+      className="minecell 22"
+      onClick={[Function]}
+    />
+    <button
+      className="minecell 23"
+      onClick={[Function]}
+    />
+    <button
+      className="minecell 24"
+      onClick={[Function]}
+    />
+    <button
+      className="minecell 25"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="minerow"
+  >
+    <button
+      className="minecell 31"
+      onClick={[Function]}
+    />
+    <button
+      className="minecell 32"
+      onClick={[Function]}
+    />
+    <button
+      className="minecell 33"
+      onClick={[Function]}
+    />
+    <button
+      className="minecell 34"
+      onClick={[Function]}
+    />
+    <button
+      className="minecell 35"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="minerow"
+  >
+    <button
+      className="minecell 41"
+      onClick={[Function]}
+    />
+    <button
+      className="minecell 42"
+      onClick={[Function]}
+    />
+    <button
+      className="minecell 43"
+      onClick={[Function]}
+    />
+    <button
+      className="minecell 44"
+      onClick={[Function]}
+    />
+    <button
+      className="minecell 45"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="minerow"
+  >
+    <button
+      className="minecell 51"
+      onClick={[Function]}
+    />
+    <button
+      className="minecell 52"
+      onClick={[Function]}
+    />
+    <button
+      className="minecell 53"
+      onClick={[Function]}
+    />
+    <button
+      className="minecell 54"
+      onClick={[Function]}
+    />
+    <button
+      className="minecell 55"
+      onClick={[Function]}
+    />
+  </div>
+</div>
+`;

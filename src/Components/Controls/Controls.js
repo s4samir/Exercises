@@ -7,7 +7,7 @@ import Button from "@material-ui/core/Button";
 import "./Control.scss";
 import TimerWatch from "./TimerWatch/TimerWatch";
 
-export function Controls({ startTheTimer, onNewGame }) {
+export default function Controls({ startTheTimer, onNewGame }) {
   return (
     <div className="controls">
       <TimerWatch startTimer={startTheTimer} />

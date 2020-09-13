@@ -6,7 +6,13 @@ import PropTypes from "prop-types";
 import MineCell from "./MineCell/MineCell";
 import "./MineField.scss";
 
-export function MineField({ row, col, mineMap, startTimer, closeGame }) {
+export default function MineField({
+  row,
+  col,
+  mineMap,
+  startTimer,
+  closeGame,
+}) {
   const [gameOver, setGameOver] = useState(false);
   const [gameWon, setGameWon] = useState(false);
   const keyClicked = useRef({});
@@ -65,7 +71,7 @@ export function MineField({ row, col, mineMap, startTimer, closeGame }) {
       closeGame("over");
     }
     if (gameWon) {
-      closeGame("win");
+      closeGame("won");
     }
   }, [gameOver, gameWon, closeGame]);
   return <div className={"minefield"}>{prepareField(row, col)}</div>;

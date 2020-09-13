@@ -8,12 +8,12 @@ import ButtonGroup from "@material-ui/core/ButtonGroup";
 import Typography from "@material-ui/core/Typography";
 import "./TopForm.scss";
 
-export function TopForm({ onLevelChange }) {
-  const level = {
-    Beginner: "55",
-    Intermediate: "67",
-    Advanced: "77",
-  };
+export const level = {
+  Beginner: "55",
+  Intermediate: "67",
+  Advanced: "77",
+};
+export default function TopForm({ onLevelChange }) {
   const handleClick = (value) => {
     onLevelChange(level[value]);
   };
